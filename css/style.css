@@ -31,6 +31,9 @@ body {
 .just-evenly {
   justify-content: space-evenly;
 }
+.column {
+  flex-direction: column;
+}
 
 .wrapper {
   width: 100%;
@@ -74,6 +77,7 @@ aside {
 }
 
 .inner-content {
+  width: 100%;
   height: 100%;
   overflow-y: auto;
   padding-top: 90px;
@@ -87,6 +91,11 @@ footer {
   bottom: 0;
   z-index: 900;
 }
+/* ASIDE  */
+.btn {
+  right: 0;
+  position: relative;
+}
 
 /* NAV SIDEBAR */
 
@@ -97,6 +106,20 @@ footer {
 }
 
 /* MAIN PLAYLIST */
+.ul-shortcut {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.ul-shortcut > ul,
+li,
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 5px;
+  color: var(--text-grey);
+  font-size: 12px;
+}
 
 .square {
   margin-top: 30px;
@@ -149,24 +172,26 @@ footer {
   border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .square {
+    width: calc((100% / 4) - 15px);
+  }
   .main-content {
-    width: auto;
+    width: calc(100% - 100px);
+  }
+  .logo-sidebar {
+    width: 70%;
+    padding-left: 0;
+  }
+  .side-navbar {
+    width: 200px;
+    height: 100%;
   }
 }
