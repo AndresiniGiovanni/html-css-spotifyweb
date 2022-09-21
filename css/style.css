@@ -46,6 +46,9 @@ body {
 .white-font {
   color: var(--text-white);
 }
+.grey-font {
+    color: var(--text-grey);
+}
 .text-align-center {
   text-align: center;
 }
@@ -58,7 +61,8 @@ main {
 nav {
   width: 230px;
   height: 100%;
-  background-color: blue;
+  background-color: var(--nero-100);
+  margin-left: 20px;
 }
 
 .main-content {
@@ -102,9 +106,46 @@ footer {
 .logo-sidebar {
   width: 70%;
   padding-top: 15px;
-  padding-left: 15px;
+  padding-bottom: 20px;
 }
 
+.img-icons {
+    width: 30px;
+    vertical-align: middle;
+    
+    padding-bottom: 10px;
+}
+.icon-name {
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: bold;
+}
+.create {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.add-btn {
+    background-color: #a3a3a3;
+    margin-top: 10px;
+    padding: 8px 6px;
+}
+.crea {
+    font-weight: 600;
+}
+.add-btn > a > i {
+    font-size: 20px;
+    font-weight:900;
+    color: var(--nero-100);
+}
+
+.playlist-name > ul > li {
+    display: block;
+}
+.playlist-name > ul > li  > a{
+    margin-left: -8px;
+    margin-top: 15px;
+    font-size: 14px;
+}
 /* MAIN PLAYLIST */
 .ul-shortcut {
   list-style-type: none;
@@ -123,7 +164,7 @@ a {
 
 .square {
   margin-top: 30px;
-  width: calc((100% / 6) - 10px);
+  width: calc((97% / 6) - 10px);
   position: relative;
   display: inline-block;
 }
