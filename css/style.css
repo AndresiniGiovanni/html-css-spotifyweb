@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 .debug {
-    border: 1px solid black;
-    min-height: 50px;
+  border: 1px solid black;
+  min-height: 50px;
 }
 
 :root {
@@ -17,116 +17,156 @@
   --text-grey: rgba(113, 113, 113, 1);
   --lime-green: rgba(173, 255, 47, 1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* FLEX  */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 .just-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .wrapper {
-    width: 100%;
-    height: 100vh; 
-    background-color: black;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 .bold-font {
-    font-weight: bold;
+  font-weight: bold;
 }
 .white-font {
-    color: var(--text-white);
+  color: var(--text-white);
 }
-.text-align-center{
-    text-align: center;
+.text-align-center {
+  text-align: center;
 }
 main {
-    width: 100%;
-    height: calc(100vh - 95px);
-    display: flex;
+  width: 100%;
+  height: calc(100vh - 95px);
+  display: flex;
 }
 
 nav {
-    width: 230px;
-    height: 100%;
-    background-color: blue;
+  width: 230px;
+  height: 100%;
+  background-color: blue;
 }
 
 .main-content {
-    width: calc(100% - 230px);
-    height: 100% ;
-    background-color: lightskyblue;
+  width: calc(100% - 230px);
+  height: 100%;
+  background-color: var(--deep-blue);
 }
 
 aside {
-    width: 100%;
-    height: 95px;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    z-index: 800;
+  width: 100%;
+  height: 95px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 800;
 }
 
 .inner-content {
-    height: 100%;
-    overflow-y: auto;
-    margin-top: 90px;
-    
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 90px;
 }
 
 footer {
-    width: 100%;
-    height: 95px;
-    background-color: brown;
-    position: fixed;
-    bottom: 0;
-    z-index: 900;
+  width: 100%;
+  height: 95px;
+  background-color: brown;
+  position: fixed;
+  bottom: 0;
+  z-index: 900;
 }
 
 /* NAV SIDEBAR */
 
 .logo-sidebar {
-    width: 70%;
-    padding-top: 15px;
-    padding-left: 15px;
+  width: 70%;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 /* MAIN PLAYLIST */
+
 .square {
-    margin-top: 30px;
-    width: calc((100% / 6) - 15px);
-    height: 150px;
-    position: relative;
-    background-color: lightblue;
-    display: inline-block;
+  margin-top: 30px;
+  width: calc((100% / 6) - 10px);
+  position: relative;
+  display: inline-block;
 }
-.recently, .for-jonh {
-    padding-top: 50px;
-    font-size: 20px; 
+.spacing {
+  padding-top: 40px;
 }
-.recently, .for-jonh, .suggestions, .square{
-    margin-left: 13px;
+.recently,
+.for-jonh,
+.popular-artists {
+  font-size: 20px;
+}
+.recently,
+.for-jonh,
+.suggestions,
+.square {
+  margin-left: 13px;
 }
 .img-playlist {
-    width: 100%;
+  max-width: 100%;
 }
-.name-playlist{
-    font-size: 15px;
-    margin-top: 7px;
-    color: var(--text-white);
+.name-playlist {
+  font-size: 15px;
+  margin-top: 7px;
+  color: var(--text-white);
 }
 
 .subtitle {
-    font-size: 12px;
-    margin-top: 4px;
-    color: var(--text-grey);
+  font-size: 12px;
+  margin-top: 4px;
+  color: var(--text-grey);
 }
 
 .john-doe-playlist {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
+.container {
+  height: 100vh;
+}
+
+.popular-artists {
+  margin-top: 10px;
+}
+
+.rounded-img {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .main-content {
+    width: auto;
+  }
+}
