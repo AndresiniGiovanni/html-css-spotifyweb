@@ -256,30 +256,6 @@ ul > li > a:hover {
   border-radius: 50%;
   overflow: auto;
 }
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-  .cards {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  .square {
-    width: calc((100% / 4) - 15px);
-  }
-  .main-content {
-    width: calc(100% - 100px);
-  }
-  .logo-sidebar {
-    width: 70%;
-    padding-left: 0;
-  }
-  .side-navbar {
-    width: 200px;
-    height: 100%;
-  }
-}
 /* FOOTER  */
 .img-footer {
   width: 100%;
@@ -387,4 +363,28 @@ ul > li > a:hover {
   height: 5px;
   border-radius: 10px;
   background-color: var(--text-white);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .square {
+    width: calc((100% / 4) - 15px);
+  }
+  .main-content {
+    width: calc(100% - 100px);
+  }
+  .logo-sidebar {
+    width: 70%;
+    padding-left: 0;
+  }
+  .side-navbar {
+    width: 200px;
+    height: 100%;
+  }
 }
