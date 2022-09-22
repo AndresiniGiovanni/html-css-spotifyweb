@@ -5,7 +5,7 @@
 }
 .debug {
   border: 1px solid black;
-  min-height: 50px;
+  background-color: purple;
 }
 
 :root {
@@ -31,8 +31,14 @@ body {
 .just-evenly {
   justify-content: space-evenly;
 }
+.just-between {
+  justify-content: space-between;
+}
 .column {
   flex-direction: column;
+}
+.align-items {
+  align-items: center;
 }
 
 .wrapper {
@@ -51,6 +57,9 @@ body {
 }
 .text-align-center {
   text-align: center;
+}
+.display-inline {
+  display: inline-block;
 }
 main {
   width: 100%;
@@ -90,7 +99,7 @@ aside {
 footer {
   width: 100%;
   height: 95px;
-  background-color: brown;
+  background-color: var(--dark-grey);
   position: fixed;
   bottom: 0;
   z-index: 900;
@@ -116,12 +125,12 @@ footer {
   padding-bottom: 10px;
 }
 .icon-name {
-  vertical-align:super;
+  vertical-align: super;
   font-size: 13px;
   font-weight: bold;
 }
 .white-ho > a:hover {
- color: var(--text-white);
+  color: var(--text-white);
 }
 .create {
   font-weight: bold;
@@ -183,11 +192,11 @@ ul > li > a:hover {
   /* position: relative; */
 }
 
-.square:hover .play{
+.square:hover .play {
   display: block;
 }
 
-.container-img:hover{
+.container-img:hover {
   opacity: 0.5;
   display: block;
 }
@@ -263,4 +272,112 @@ ul > li > a:hover {
     width: 200px;
     height: 100%;
   }
+}
+/* FOOTER  */
+.img-footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.music-play {
+  width: 250px;
+}
+
+.central-bar {
+  width: 600px;
+}
+
+.settings-panel {
+  width: 250px;
+}
+
+.container-img-footer {
+  width: 20%;
+}
+
+.name-playing {
+  margin-left: 20px;
+  margin-top: 30px;
+  line-height: 15px;
+}
+.sinister-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.brano-nome {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-grey);
+}
+.playing-icons {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.playing-icons > i {
+  padding: 0 7px;
+  color: var(--text-white);
+}
+
+.just-end {
+  display: flex;
+  align-items: center;
+}
+
+.icons-player {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.icons-player > div > a {
+  color: var(--text-white);
+}
+.circle {
+  font-size: 28px;
+}
+.shuffle,
+.backward,
+.forward,
+.rotate {
+  font-size: 20px;
+}
+
+.progression-bar {
+  width: 480px;
+  margin-top: 13px;
+  height: 5px;
+  background-color: var(--text-grey);
+  border-radius: 10px;
+}
+.time {
+  font-size: 12px;
+  margin-top: 7px;
+  color: var(--text-white);
+}
+.test {
+  width: 15%;
+  height: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+.list,
+.display,
+.volume {
+  font-size: 16px;
+  padding: 0 3px;
+  color: var(--text-white);
+}
+.volume-bar {
+  width: 120px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--text-grey);
+}
+.low-vol {
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--text-white);
 }
