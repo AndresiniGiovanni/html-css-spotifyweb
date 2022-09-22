@@ -47,7 +47,7 @@ body {
   color: var(--text-white);
 }
 .grey-font {
-    color: var(--text-grey);
+  color: var(--text-grey);
 }
 .text-align-center {
   text-align: center;
@@ -110,41 +110,41 @@ footer {
 }
 
 .img-icons {
-    width: 30px;
-    vertical-align: middle;
-    
-    padding-bottom: 10px;
+  width: 30px;
+  vertical-align: middle;
+
+  padding-bottom: 10px;
 }
 .icon-name {
-    vertical-align: middle;
-    font-size: 13px;
-    font-weight: bold;
+  vertical-align:super;
+  font-size: 13px;
+  font-weight: bold;
 }
 .create {
-    font-weight: bold;
-    margin-top: 20px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 .add-btn {
-    background-color: #a3a3a3;
-    margin-top: 10px;
-    padding: 8px 6px;
+  background-color: #a3a3a3;
+  margin-top: 10px;
+  padding: 8px 6px;
 }
 .crea {
-    font-weight: 600;
+  font-weight: 600;
 }
 .add-btn > a > i {
-    font-size: 20px;
-    font-weight:900;
-    color: var(--nero-100);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--nero-100);
 }
 
 .playlist-name > ul > li {
-    display: block;
+  display: block;
 }
-.playlist-name > ul > li  > a{
-    margin-left: -8px;
-    margin-top: 15px;
-    font-size: 14px;
+.playlist-name > ul > li > a {
+  margin-left: -8px;
+  margin-top: 15px;
+  font-size: 14px;
 }
 /* MAIN PLAYLIST */
 .ul-shortcut {
@@ -164,12 +164,36 @@ a {
 
 .square {
   margin-top: 30px;
-  width: calc((97% / 6) - 10px);
+  width: calc((96% / 6) - 10px);
   position: relative;
   display: inline-block;
 }
-.spacing {
-  padding-top: 40px;
+
+.container-img {
+  width: 100%;
+  position: relative;
+}
+.img-playlist {
+  max-width: 100%;
+  /* position: relative; */
+}
+
+.square:hover .play{
+  display: block;
+}
+
+.container-img:hover{
+  opacity: 0.5;
+  display: block;
+}
+
+.play {
+  position: absolute;
+  bottom: 35%;
+  right: 35%;
+  font-size: 72px;
+  color: var(--text-white);
+  display: none;
 }
 .recently,
 .for-jonh,
@@ -182,9 +206,7 @@ a {
 .square {
   margin-left: 13px;
 }
-.img-playlist {
-  max-width: 100%;
-}
+
 .name-playlist {
   font-size: 15px;
   margin-top: 7px;
@@ -211,6 +233,7 @@ a {
 
 .rounded-img {
   border-radius: 50%;
+  overflow: auto;
 }
 
 @media screen and (max-width: 768px) {
