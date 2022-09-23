@@ -460,6 +460,10 @@ ul > li > a:hover {
   .container {
     width: 100%;
   }
+  .ul-shortcut{
+    margin-bottom: 2rem;
+    padding-left: 25px;
+  }
   .icon-name,
   .create-playlist,
   .playlist-name,
@@ -515,5 +519,14 @@ ul > li > a:hover {
     width: 40px;
     margin-left: -10px;
     margin-bottom: 5px;
+  }
+  .download {
+    width: 25px;
+  }
+  .svg-profile {
+    width: 30px;
+  }
+  .jo{
+    border: 0px;
   }
 }
