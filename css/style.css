@@ -144,6 +144,7 @@ footer {
 }
 .white-ho > a:hover {
   color: var(--text-white);
+  transition: 0.6s;
 }
 .create {
   font-weight: bold;
@@ -212,6 +213,7 @@ footer {
   margin: 0 auto;
   padding-top: 15px;
 }
+
 .ul-shortcut > ul,
 li,
 a {
@@ -223,6 +225,8 @@ a {
 }
 ul > li > a:hover {
   color: var(--text-white);
+  transition-duration: 0.6s;
+  font-size: 16px;
 }
 .square {
   margin-top: 30px;
@@ -237,7 +241,11 @@ ul > li > a:hover {
 }
 .img-playlist {
   max-width: 100%;
-  /* position: relative; */
+}
+.img-playlist:hover{
+  border: 5px solid greenyellow;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 
 .square:hover .play {
@@ -380,7 +388,7 @@ ul > li > a:hover {
 .internal {
   width: 15%;
   height: 5px;
-  background-color: white;
+  background-color: #7b68ee;
   border-radius: 10px;
 }
 .list,
@@ -403,7 +411,7 @@ ul > li > a:hover {
   width: 30%;
   height: 5px;
   border-radius: 10px;
-  background-color: var(--text-white);
+  background-color: #7b68ee;
 }
 
 @media screen and (max-width: 992px) {
@@ -424,7 +432,7 @@ ul > li > a:hover {
     width: 70%;
     padding-left: 0;
   }
-
+  
   .btn {
     right: 25%;
   }
