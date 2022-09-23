@@ -119,8 +119,8 @@ footer {
 .btn > a {
   color: var(--text-white);
 }
-/* NAV SIDEBAR */
 
+/* NAV SIDEBAR */
 .logo-sidebar {
   width: 70%;
   padding-top: 15px;
@@ -134,8 +134,14 @@ footer {
 .img-icons {
   width: 30px;
   vertical-align: middle;
-
   padding-bottom: 10px;
+}
+.home-space{
+  margin-left: 15px;
+}
+.lime-bar {
+  border-left: 2px solid lime;
+  margin-left: -20px;
 }
 .icon-name {
   vertical-align: super;
@@ -172,6 +178,9 @@ footer {
   margin-top: 15px;
   font-size: 14px;
 }
+.playlist-name {
+  overflow: auto;
+}
 .john-doe {
   height: 90px;
   margin-right: 20px;
@@ -184,6 +193,7 @@ footer {
 .download {
   width: 10%;
 }
+
 .jo {
   color: var(--text-white);
   padding-bottom: 15px;
@@ -207,13 +217,17 @@ footer {
   font-size: 15px;
   font-weight: 600;
 }
+
 /* MAIN PLAYLIST */
 .ul-shortcut {
   list-style-type: none;
   margin: 0 auto;
   padding-top: 15px;
 }
-
+#bar {
+  border-bottom: 2px solid limegreen;
+  padding-bottom: 5px;
+}
 .ul-shortcut > ul,
 li,
 a {
@@ -242,7 +256,7 @@ ul > li > a:hover {
 .img-playlist {
   max-width: 100%;
 }
-.img-playlist:hover{
+.img-playlist:hover {
   border: 5px solid greenyellow;
   border-radius: 5px;
   transition: 0.5s;
@@ -432,7 +446,7 @@ ul > li > a:hover {
     width: 70%;
     padding-left: 0;
   }
-  
+
   .btn {
     right: 25%;
   }
@@ -468,7 +482,7 @@ ul > li > a:hover {
   .container {
     width: 100%;
   }
-  .ul-shortcut{
+  .ul-shortcut {
     margin-bottom: 2rem;
     padding-left: 25px;
   }
@@ -534,7 +548,7 @@ ul > li > a:hover {
   .svg-profile {
     width: 30px;
   }
-  .jo{
+  .jo {
     border: 0px;
   }
 }
