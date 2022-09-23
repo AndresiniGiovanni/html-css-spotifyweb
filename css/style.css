@@ -136,7 +136,7 @@ footer {
   vertical-align: middle;
   padding-bottom: 10px;
 }
-.home-space{
+.home-space {
   margin-left: 15px;
 }
 .lime-bar {
@@ -428,6 +428,19 @@ ul > li > a:hover {
   background-color: #7b68ee;
 }
 
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .btn {
+    right: 23%;
+  }
+  .ul-shortcut {
+    margin-bottom: 2rem;
+    padding-left: 25px;
+  }
+}
 @media screen and (max-width: 992px) {
   .container {
     width: 100%;
@@ -446,20 +459,21 @@ ul > li > a:hover {
     width: 70%;
     padding-left: 0;
   }
-
   .btn {
     right: 25%;
   }
-
   .central-bar {
     width: 40%;
   }
-
   .settings-panel {
     width: 25%;
   }
   .central-prog {
     width: 100%;
+  }
+  .ul-shortcut {
+    margin-bottom: 2rem;
+    padding-left: 25px;
   }
 }
 
@@ -475,6 +489,10 @@ ul > li > a:hover {
   }
   .central-bar {
     width: 35%;
+  }
+  .ul-shortcut {
+    margin-bottom: 2rem;
+    padding-left: 25px;
   }
 }
 
