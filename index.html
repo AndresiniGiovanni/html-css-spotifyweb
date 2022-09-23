@@ -24,44 +24,60 @@
     <div class="wrapper container">
       <main>
         <nav class="side-navbar">
-          <a href="index.html">
-            <img class="logo-sidebar" src="./img/logo.svg" alt="logo" />
-          </a>
-          <div class="flex column">
-            <div class="icons">
-              <img class="img-icons" src="./img/home.svg" alt="home" />
-              <span> <a class="icon-name white-font" href="#">Home</a> </span>
+          <div class="top-bar">       
+            <a href="index.html">    
+              <img class="logo-sidebar" src="./img/logo.svg" alt="logo" />
+              
+            </a>
+            <a class="small" href="index.html">
+              <img class="logo-small" src="./img/logo-small.svg" alt="logo-small">
+            </a>
+            <div class="flex column">
+              <div class="icons">
+                <img class="img-icons" src="./img/home.svg" alt="home" />
+                <span> <a class="icon-name white-font" href="#">Home</a> </span>
+              </div>
+              <div class="icons">
+                <img class="img-icons" src="./img/search.svg" alt="home" />
+                <span class="white-ho">
+                  <a class="icon-name" href="#">Cerca</a>
+                </span>
+              </div>
+              <div class="icons">
+                <img class="img-icons" src="./img/libreria.svg" alt="home" />
+                <span class="white-ho">
+                  <a class="icon-name" href="#">La tua libreria</a>
+                </span>
+              </div>
             </div>
-            <div class="icons">
-              <img class="img-icons" src="./img/search.svg" alt="home" />
-              <span class="white-ho">
-                <a class="icon-name" href="#">Cerca</a>
-              </span>
+            <div class="create-playlist">
+              <div class="create white-font">PLAYLIST</div>
+              <button class="add-btn">
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+              </button>
+              <span class="grey-font crea">Crea Playlist</span>
             </div>
-            <div class="icons">
-              <img class="img-icons" src="./img/libreria.svg" alt="home" />
-              <span class="white-ho">
-                <a class="icon-name" href="#">La tua libreria</a>
-              </span>
+            <div class="playlist-name">
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
             </div>
           </div>
-          <div class="create-playlist">
-            <div class="create white-font">PLAYLIST</div>
-            <button class="add-btn">
-              <a href="#"><i class="fa-solid fa-plus"></i></a>
-            </button>
-            <span class="grey-font crea">Crea Playlist</span>
-          </div>
-          <div class="playlist-name">
-            <ul>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-            </ul>
+          <div class="john-doe">
+            <div class="jo">
+              <img class="download" src="./img/download.svg" alt="download">
+              <a class="installa" href="#">Installa app</a>
+            </div>
+            <div class="svg-profile">
+              <img class="pro-svg" src="./img/profile.svg" alt="profile" />
+            </div>
+            <div class="online-profile">John Doe</div>
           </div>
         </nav>
 
@@ -246,13 +262,13 @@
       <footer class="flex just-between">
         <div class="music-play flex">
           <div class="container-img-footer display-inline">
-            <img class="img-footer" src="./img/sinister.jpeg" alt="" />
+            <img class="img-footer" src="./img/sinister.jpeg" alt="sinister" />
           </div>
           <div class="column name-playing">
             <div class="sinister-text">Sinister</div>
             <div class="brano-nome">My Sick Piano</div>
           </div>
-          <div class="playing-icons just-end">
+          <div class="playing-icons flex just-end">
             <i class="fa-regular fa-heart"></i>
             <i class="fa-regular fa-folder"></i>
           </div>
@@ -276,18 +292,19 @@
             </div>
           </div>
 
-          <div class="flex just-evenly">
+          <div class="central-prog flex just-evenly">
             <div class="time">
               <div>0:25</div>
             </div>
-            <div>
+            <div class="wid">
               <div class="progression-bar">
-                <div class="test"></div>
+                <div class="internal"></div>
               </div>
             </div>
             <div class="time">4:35</div>
           </div>
         </div>
+
         <div class="settings-panel flex align-items">
           <div>
             <a href="#"><i class="fa-solid fa-list-ul list"></i></a>
@@ -298,8 +315,10 @@
           <div>
             <a href="#"><i class="fa-solid fa-volume-high volume"></i></a>
           </div>
-          <div class="volume-bar">
-            <div class="low-vol"></div>
+          <div class="external-vol">
+            <div class="volume-bar">
+              <div class="low-vol"></div>
+            </div>
           </div>
         </div>
       </footer>

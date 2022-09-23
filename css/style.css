@@ -40,7 +40,9 @@ body {
 .align-items {
   align-items: center;
 }
-
+.just-end {
+  align-items: center;
+}
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -124,6 +126,10 @@ footer {
   padding-top: 15px;
   padding-bottom: 20px;
 }
+.top-bar {
+  height: calc(100% - 90px);
+  width: 100%;
+}
 
 .img-icons {
   width: 30px;
@@ -164,6 +170,41 @@ footer {
   margin-left: -8px;
   margin-top: 15px;
   font-size: 14px;
+}
+.john-doe {
+  height: 90px;
+  margin-right: 20px;
+}
+.installa {
+  color: var(--text-white);
+  vertical-align: super;
+  font-size: 15px;
+}
+.download {
+  width: 10%;
+}
+.jo {
+  color: var(--text-white);
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.pro-svg {
+  padding: 5px 8px;
+}
+.svg-profile {
+  width: 15%;
+  background-color: var(--text-grey);
+  margin-top: 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.online-profile {
+  display: inline-block;
+  color: var(--text-white);
+  margin-left: 0.7rem;
+  vertical-align: super;
+  font-size: 15px;
+  font-weight: 600;
 }
 /* MAIN PLAYLIST */
 .ul-shortcut {
@@ -256,26 +297,24 @@ ul > li > a:hover {
   border-radius: 50%;
   overflow: auto;
 }
+
 /* FOOTER  */
 .img-footer {
   width: 100%;
   margin-top: 20px;
   margin-left: 10px;
 }
-.music-play {
-  width: 250px;
-}
 
 .central-bar {
-  width: 600px;
+  width: 30%;
 }
 
 .settings-panel {
-  width: 250px;
+  width: 15%;
 }
 
 .container-img-footer {
-  width: 20%;
+  width: 50px;
 }
 
 .name-playing {
@@ -303,11 +342,6 @@ ul > li > a:hover {
   color: var(--text-white);
 }
 
-.just-end {
-  display: flex;
-  align-items: center;
-}
-
 .icons-player {
   width: 60%;
   margin: 0 auto;
@@ -326,10 +360,13 @@ ul > li > a:hover {
 .rotate {
   font-size: 20px;
 }
-
+.wid {
+  width: 100%;
+}
 .progression-bar {
-  width: 480px;
+  width: 98%;
   margin-top: 13px;
+
   height: 5px;
   background-color: var(--text-grey);
   border-radius: 10px;
@@ -337,9 +374,10 @@ ul > li > a:hover {
 .time {
   font-size: 12px;
   margin-top: 7px;
+  margin-right: 10px;
   color: var(--text-white);
 }
-.test {
+.internal {
   width: 15%;
   height: 5px;
   background-color: white;
@@ -352,20 +390,23 @@ ul > li > a:hover {
   padding: 0 3px;
   color: var(--text-white);
 }
+.external-vol {
+  width: 100%;
+}
 .volume-bar {
-  width: 120px;
+  width: 80%;
   height: 5px;
   border-radius: 10px;
   background-color: var(--text-grey);
 }
 .low-vol {
-  width: 30px;
+  width: 30%;
   height: 5px;
   border-radius: 10px;
   background-color: var(--text-white);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container {
     width: 100%;
   }
@@ -383,8 +424,96 @@ ul > li > a:hover {
     width: 70%;
     padding-left: 0;
   }
-  .side-navbar {
-    width: 200px;
-    height: 100%;
+
+  .btn {
+    right: 25%;
+  }
+
+  .central-bar {
+    width: 40%;
+  }
+
+  .settings-panel {
+    width: 25%;
+  }
+  .central-prog {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .square {
+    width: calc((100% / 2) - 25px);
+  }
+  .icons-player {
+    width: 85%;
+  }
+  .central-bar {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .icon-name,
+  .create-playlist,
+  .playlist-name,
+  .online-profile,
+  .logo-sidebar,
+  .installa {
+    display: none;
+  }
+  .list,
+  .display,
+  .volume {
+    font-size: 0.8rem;
+  }
+  nav {
+    width: 50px;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .name-playing {
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 60px;
+  }
+  .playing-icons {
+    display: block;
+    margin-top: 1.3rem;
+    width: 10px;
+    padding: 0;
+    font-size: 15px;
+  }
+  .img-footer {
+    width: 40px;
+  }
+  .central-bar {
+    width: 50%;
+    padding-left: 40px;
+  }
+  .icons-player {
+    width: 90%;
+  }
+  .shuffle,
+  .backward,
+  .circle,
+  .forward,
+  .rotate {
+    font-size: 1.2rem;
+  }
+  .settings-panel {
+    width: 150px;
+  }
+  .logo-small {
+    width: 40px;
+    margin-left: -10px;
+    margin-bottom: 5px;
   }
 }
